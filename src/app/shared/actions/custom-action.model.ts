@@ -1,7 +1,8 @@
-import {Action} from '@ngrx/store';
 import {ActionCreator, TypedAction} from '@ngrx/store/src/models';
 
-export interface CustomActionModel<T, J extends string> extends Action {
+export interface CustomActionModel<T, J extends string> extends TypedAction<string> {
+
+  readonly type: string;
 
   payload?: T;
 

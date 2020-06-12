@@ -5,7 +5,7 @@ import {User} from '../../core/model/user.model';
 
 export class AllUsersRequestAction implements CustomActionModel<Array<User>, UsersActionsTypesEnum.ALL> {
 
-  public type: UsersActionsTypesEnum.ALL;
+  public readonly type: string =  UsersActionsTypesEnum.ALL;
 
   constructor() {
   }

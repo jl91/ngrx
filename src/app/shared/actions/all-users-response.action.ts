@@ -5,7 +5,7 @@ import {User} from '../../core/model/user.model';
 
 export class AllUsersResponseAction implements CustomActionModel<Array<User>, UsersActionsTypesEnum.LOADED> {
 
-  public type: UsersActionsTypesEnum.LOADED;
+  public type: string = UsersActionsTypesEnum.LOADED;
 
   constructor(
     public payload?: Array<User>
